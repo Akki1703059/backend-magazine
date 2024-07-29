@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/CSS/login.css">
+</head>
+
+<body class="bg-gray-900">
+    <div class="flex items-center justify-center min-h-screen text-white">
+        <div class="flex w-full h-full">
+            <!-- Left side with login form -->
+            <div class="flex flex-col justify-center items-center w-full md:w-1/2">
+                <div class="max-w-md w-full p-8 bg-gray-700 rounded-lg shadow-lg">
+                    <div class="flex justify-center mb-6">
+                        <img src="/Images/logo.png" alt="Logo" width="100">
+                    </div>
+                    <h2 class="text-center text-3xl font-bold mb-4">Login</h2>
+                    <form id="signup-form" action="/login" method="POST">
+                        <div class="space-y-2">
+                            <label for="regdno" class="block text-sm font-medium">Registration number or mail:</label>
+                            <input type="text" id="regdno" name="regdno" placeholder="Enter your registration number or mail" required
+                                class="input">
+                        </div>
+                        <div class="space-y-2">
+                            <label for="password" class="block text-sm font-medium">Password:</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required
+                                class="input">
+                        </div>
+                        <div class="flex justify-center">
+                            <button type="submit" class="btn">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Right side with image -->
+            <div class="hidden md:flex md:w-1/2 justify-center items-center">
+                <img src="/Images/login-left.png" alt="Right Side Image" class="h-3/4">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

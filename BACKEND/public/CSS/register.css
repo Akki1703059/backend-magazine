@@ -1,0 +1,133 @@
+/* Add your CSS styles here */
+/* You can adjust the styles as needed */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a202c;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flex layout */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/* Form styles */
+.max-w-md {
+    max-width: 28rem;
+}
+
+.bg-gray-700 {
+    background-color: #4a5568;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.shadow-lg {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.text-base {
+    font-size: 1rem;
+}
+
+.text-gray-400 {
+    color: #cbd5e0;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-red-600 {
+    color: #e53e3e;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.space-y-2 > * {
+    margin-bottom: 0.75rem; /* Adjust spacing between elements */
+}
+
+/* Input styles */
+.input {
+    border: 1px solid #cbd5e0;
+    border-radius: 0.375rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #4a5568;
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5);
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #4299e1;
+    border-radius: 0.375rem;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #3182ce;
+}
+
+/* Image styles */
+.h-3\/4 {
+    height: 75%;
+}
+
+/* Right side container */
+.right-container {
+    width: 50%; /* Set width to half of the screen */
+}
+/* Form styles */
+.max-w-md {
+    max-width: 28rem;
+    padding: 1.5rem; /* Add padding to the form */
+}
+
+/* Input styles */
+.input {
+    border: 1px solid #cbd5e0;
+    border-radius: 0.375rem;
+    padding: 0.75rem; /* Reduce padding to fit within form */
+    font-size: 1rem;
+    width: calc(100% - 1.5rem); /* Adjust width to fit within form with padding */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}

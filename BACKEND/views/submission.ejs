@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Alley</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <form class="" action="/upload" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="regdno">
+        <label for="Title">Title</label>
+        <input type="text" placeholder="Title" name="Title" required>
+        <label for="categorySelect">Category</label>
+        <select class="form-control" id="categorySelect" name="Category" required>
+            <option value="Photography">Photography</option>
+            <option value="Art">Art</option>
+            <option value="Literature">Literature</option>
+            <option value="Fashion">Fashion</option>
+        </select>
+        <label for="files">Image</label>
+        <input class="form-control" type="file" name="image" required/>
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
+</body>
+</html>

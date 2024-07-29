@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+   
+}
+body{
+    background:url("/Images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+}
+img{
+    width: 40px;
+    margin-right:8px ;
+    transform: translateY(4.5px);
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    letter-spacing: 2px;
+    
+}
+.nav-items {
+    display: inline-block;
+   
+}
+.nav{
+    padding: 10px;
+   
+   
+}
+.nav-bar{
+    background-color: rgb(0, 0, 0);
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        padding: 20px 5%;
+        align-items: center;
+   
+  
+}
+.nav-buttons{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 20px;  
+}
+
+
+#slideshow {
+    overflow: hidden;
+    height: 680px;
+    width: 1350px;
+    margin: 0 auto;
+    margin-top: 82px;
+    border-radius: 0 0 50px 50px;
+}
+.slide {
+    float: left;
+    height: 680px;
+    width: 1350px;
+    background-size: cover;
+}
+.slide-wrapper {
+    width: calc(1350px * 3);
+    animation: slide 25s ease infinite;
+}
+
+.slide:nth-child(1) {
+    background-image: url("/Images/Photography.png");
+    
+}
+
+.slide:nth-child(2) {
+    background-image: url("/Images/ART.png");
+    
+}
+
+.slide:nth-child(3) {
+    background-image: url("/Images/Litrerature.png");
+}
+
+@keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+
+    40% {
+        margin-left: calc(-1350px * 1);
+    }
+
+    60% {
+        margin-left: calc(-1350px * 2);
+    } 
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: black;
+    padding: 70px 0;
+    position: static;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col p {
+    color: white;
+
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.time-box{
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.553);
+    height: 500px;
+    width: 1000px;
+    margin: 50px;
+    border-radius: 50px;
+    transform: translateX(200px);
+   
+}
+.launch-time,.time-head{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    transform: translateY(150px);
+}
+.launch-time div{
+    flex-basis: 100px;
+}
+.launch-time div p {
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+span{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+}
+.spam{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    transform: translateY(-3px);
+   
+}
+.spam:hover{
+    color: rgb(64, 237, 16);
+    backface-visibility: hidden;
+    transition: all 0.5s;
+   
+}
+#button{
+    padding: 20px;
+    transform: translateY(160px);
+    border-radius: 20px;
+    border: solid white 2px;
+    width: 250px;
+    font-size: 18px;
+    background:none;
+    color: white;
+}
+#button:hover{
+    color:black;
+    background: white;
+    border:solid black 2px;
+    transition: all 1s;
+}
